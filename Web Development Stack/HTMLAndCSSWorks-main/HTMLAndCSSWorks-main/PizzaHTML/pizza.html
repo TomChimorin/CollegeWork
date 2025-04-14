@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="pizza.css">
+</head>
+<body>
+    <!-- Header section with the site title -->
+    <header>
+        <h1>Welcome to Pizza Palace!</h1>
+    </header>
+    
+    <!-- Main content section with the order form -->
+    <section id="order-form">
+        <h2>Order Your Pizza</h2>
+        
+        <!-- Pizza order form -->
+        <form action="/submit-order" method="post">
+            <!-- Quantity input field -->
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required><br>
+
+            <!-- Size selection dropdown -->
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select><br>
+
+            <!-- Toppings checkboxes -->
+            <p>Toppings:</p>
+            <input type="checkbox" id="cheese" name="topping" value="cheese">
+            <label for="cheese">Cheese</label>
+            <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="mushroom" name="topping" value="mushroom">
+            <label for="mushroom">Mushroom</label><br>
+
+            <!-- Email input field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Order Now">
+        </form>
+    </section>
+    
+    <!-- Footer section with contact information -->
+    <footer>
+        <p>Contact us at orders@pizzapalace.com</p>
+    </footer>
+</body>
+</html>

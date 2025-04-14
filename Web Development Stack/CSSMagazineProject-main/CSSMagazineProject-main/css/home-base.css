@@ -1,0 +1,182 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap');
+
+@media only screen and (max-width: 1076px) {
+    /* Adjust container width to be more flexible on small screens */
+    #container {
+      margin: 10px auto; 
+      width: 90%; 
+      padding: 10px; 
+    }
+  }
+
+/* Container styles */
+#container {
+    position: relative; /* Ensure the container is a positioned element */
+    margin: 0 20%;
+    border: 1px solid black;
+    padding: 20px;
+    max-width: 90%;
+}
+
+/* Image container styles */
+.container1, .container2 {
+    grid-area: image;
+    width: 100%; /* Ensure full width */
+}
+
+/* Image styles */
+img {
+    width: inherit; /* Inherit width from container */
+}
+
+/* General link styles */
+a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+mark{
+  background-color:rgb(222, 216, 216);
+}
+
+/* Header styles */
+header {
+    display: grid;
+    grid-template-areas: 
+    "topic topic"
+    "header image";
+}
+
+/* Header text styles */
+header h1 {
+    grid-area: header;
+    color: black;
+    font-family: "Chivo Mono", monospace;
+    font-size: 6em;
+    font-weight: 800;
+    margin: 0;
+}
+
+header h1 em {
+    color: red;
+    font-style: normal;
+}
+
+header p {
+    grid-area: topic;
+    font-size: 120%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Main content styles */
+main {
+    display: grid;
+    grid-template-columns: 1.0fr 1.5fr;
+    grid-gap: 4%;
+    grid-template-areas:
+    "sidebar article"
+    "sidebar image"
+    "footercontent article2";
+    padding-bottom: 60px;
+}
+
+/* Article styles */
+main article :first-of-type{
+    font-size: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main article:first-child h2 {
+    color: rgba(154, 22, 22, 0.888);
+    font-size: 1.7em;
+    font-family: "Fragment Mono", monospace;
+    letter-spacing: 10%;
+    margin: 0;
+}
+
+main article:first-of-type {
+    grid-area: article;
+    font-size: 100%;
+}
+
+main article:last-of-type {
+    grid-area: article2;
+    padding-top: 0;
+    font-size: 1.2em;
+}
+
+main article:last-of-type h2 {
+    text-transform: lowercase;
+    font-size: 3.5em;
+    font-weight: 2;
+}
+
+main article:last-of-type h2::first-letter {
+    text-transform: capitalize;
+}
+
+main article:last-of-type p::first-line {
+    font-weight: bold;
+}
+
+main article:last-of-type p {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+/* Sidebar styles */
+main aside:first-of-type {
+    grid-area: sidebar;
+    line-height: 3em;
+    font-size: 1.3em;
+    padding-right: 5%;
+    border-right: 1px solid black;
+}
+
+main aside:first-of-type p {
+    margin-top: 0;
+    padding: 4%;
+}
+
+main aside:first-of-type p::first-line {
+    font-weight: bold;
+}
+
+/* Footer aside styles */
+main aside:last-of-type {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(229, 226, 226);
+}
+
+main aside:last-of-type ul li h3 {
+    padding-bottom: 5px;
+}
+
+main aside:last-of-type p:first-of-type {
+    padding-left: 20px; 
+}
+
+main aside:last-of-type h2 {
+    color: red;
+    padding-left: 15%;
+    margin: 0;
+}
+
+/* Footer content styles */
+main aside:last-child {
+    grid-area: "footercontent";
+}
+
+main aside:last-of-type p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 7px;
+}
+
+footer p{
+  margin-bottom: 0;
+}
+

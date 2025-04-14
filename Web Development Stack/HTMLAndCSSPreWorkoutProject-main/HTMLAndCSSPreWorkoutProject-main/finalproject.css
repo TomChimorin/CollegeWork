@@ -1,0 +1,94 @@
+/* Resetting default margin */
+body {
+    margin: 0;
+}
+
+/* Styling for the navigation bar */
+nav {
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Styling for the title in the navigation bar */
+.navbar-title {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 auto; /* Center the title */
+    text-align: center;
+}
+
+/* Styling for the navigation options */
+.navbar-options {
+    display: flex;
+    justify-content: flex-start; /* Align options to the left */
+    width: 40%; /* Adjust the width as needed */
+}
+
+/* Styling for individual navigation links */
+.navbar-options a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Styling for sections on the page */
+section {
+    padding: 20px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+}
+
+/* Styling for the call-to-action button */
+.cta-button {
+    justify-content: center;
+    align-items: center;
+    background-color: #f60;
+    color: #fff;
+    padding: 25px 50px; /* Adjust padding to make it a little bigger */
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 25px; /* Increase font size for a bigger button */
+    margin: auto; /* Center the button horizontally */
+}
+
+/* Styling for the call-to-action button on hover */
+.cta-button:hover {
+    background-color: #a2470a;
+}
+
+/* Styling for a flex container */
+.flex-container {
+    display: flex;
+}
+
+/* Styling for a specific text block with an ID */
+#catchyText {
+    width: 50%;
+}
+
+/* Styling for an image with a specific ID */
+#productImage {
+    width: 50%;
+    max-height: 80vh;
+    object-fit: cover;
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px #ffffff;
+    text-shadow: 0px 2px 4px red;
+}
+
+
+
+

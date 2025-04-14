@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for responsive design and SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <!-- Linking the CSS stylesheet -->
+    <link rel="stylesheet" href="contact.css">
+    
+    <!-- Meta tags for social media sharing -->
+    <meta name="robots" content="max-image-preview:large">
+    <meta property="og:title" content="VContact Page for PreWorkout">
+    <meta property="og:description" content="Feel free to contact us about anything of the product, any problems, or just any advice!">
+    
+    <!-- Page title -->
+    <title>Cybergenics Pre-workout</title>
+    
+    <!-- JavaScript function to show a contact received alert -->
+    <script>
+        function showcontactReceivedAlert() {
+            alert("Thank You For Contacting Us! We will be with you shortly!");
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="navbar-title">Cybergenics Pre-workout</div>
+        <div class="navbar-options">
+            <a href="finalProject.html">Home</a>
+            <a href="company.html">Company</a>
+            <a href="product.html">Product</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <h1>Windmill Health Products</h1>
+    <h2>Contact Us!</h2>
+    <!-- Contact form -->
+    <form action="process_order.php" method="post" onsubmit="return showcontactReceivedAlert()">
+        <label for="container-size">Your E-mail:</label>
+        <br>
+        <br>
+        <!-- Textarea for the user's email -->
+        <textarea type="firstname"></textarea>
+        <br>
+        <br>
+        <!-- Address and contact information -->
+        <label for="contact-address">Address: 10 Henderson Dr, West Caldwell, USA</label>
+        <br>
+        <br>
+        <label for="delivery-address">E-mail Address: support@windmillhealth.com</label>
+        <br>
+        <br>
+        <label for="contact-number">Contact Number: 1-800-822-4320</label>
+        <br>
+        <br>
+        <!-- Textarea for the user's message -->
+        <textarea for="message" placeholder="Send us a message"></textarea>
+        <!-- Submit button -->
+        <input type="submit" value="Send Message">
+    </form>
+
+    <!-- Footer section -->
+    <footer>
+        &copy; 2023 Yu Zhao & Dawson Fearon
+    </footer>
+</body>
+
+</html>

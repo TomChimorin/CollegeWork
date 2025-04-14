@@ -1,0 +1,162 @@
+/* Resetting default margin and setting background color and image */
+body {
+    margin: 0;
+    background-color: #424242;
+    background-image: url(//www.jamnfitness.com/images/cybergenics-pre-workout-supplement.jpg);
+}
+
+/* Styling for the navigation bar */
+nav {
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Styling for the navigation bar title */
+.navbar-title {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 auto; /* Center the title */
+    text-align: center;
+}
+
+/* Styling for navigation bar options */
+.navbar-options {
+    display: flex;
+    justify-content: flex-start; /* Align options to the left */
+    width: 40%; /* Adjust the width as needed */
+}
+
+/* Styling for navigation bar option links */
+.navbar-options a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    background-color: black;
+}
+
+/* Styling for navigation bar option links on hover */
+.navbar-options a:hover {
+    color: rgb(128, 128, 128);
+}
+
+/* Styling for sections with text shadow and padding */
+section {
+    padding: 20px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for flex container */
+.flex-container {
+    display: flex;
+}
+
+/* Styling for catchyText with 50% width */
+#catchyText {
+    width: 50%;
+}
+
+/* Styling for productImage with 50% width, maximum height, and object-fit cover */
+#productImage {
+    width: 50%;
+    max-height: 80vh;
+    object-fit: cover;
+}
+
+/* Styling for fixed position footer */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px #ffffff;
+    text-shadow: 0px 2px 4px red;
+}
+
+/* Styling for form with max-width, margin, padding, border, border-radius, and background color */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #2eceff;
+    border-radius: 5px;
+    background-color: #424242;
+}
+
+/* Styling for headings (h1) with margin, text alignment, text shadow, padding, color, and text-stroke */
+h1 {
+    margin: 50px;
+    text-align: center;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow: 3px 3px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+}
+
+/* Styling for subheadings (h2) with margin, text alignment, text shadow, padding, color, and text-stroke */
+h2 {
+    margin: 0px;
+    text-align: center;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow: 3px 3px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+}
+
+/* Styling for labels with font weight and margin-top */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Styling for input fields (text, number, tel, select, textarea) with width, padding, margin-top, border, and border-radius */
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #2eceff;
+    border-radius: 4px;
+}
+
+/* Styling for container with flex direction, alignment, and margin */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Styling for submit button with width, padding, margin-top, background color, color, border, border-radius, and cursor */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Styling for submit button on hover with background color change */
+input[type="submit"]:hover {
+    background-color: #a2470a;
+}

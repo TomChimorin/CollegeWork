@@ -1,0 +1,74 @@
+/* Global body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background-color: #ff9800;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+/* Main content section styling */
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Form labels styling */
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+/* Form input fields styling */
+input[type="number"],
+input[type="email"],
+select {
+    width: calc(100% - 110px);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Form checkbox input styling */
+input[type="checkbox"] {
+    margin: 5px 0;
+}
+
+/* Form submit button styling */
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #e68a00;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff9800;
+    color: white;
+}

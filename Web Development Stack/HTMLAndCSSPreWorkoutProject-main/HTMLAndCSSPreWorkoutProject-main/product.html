@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set viewport for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="product.css">
+    
+    <!-- Set character encoding and define max image preview for search engines -->
+    <meta charset="utf-8">
+    <meta name="robots" content="max-image-preview:large">
+    
+    <!-- Open Graph meta tags for better sharing on social media -->
+    <meta property="og:title" content="Contact">
+    <meta property="og:description" content="Help, Contact, Information">
+    
+    <!-- Page title -->
+    <title>Cybergenics Pre-workout</title>
+    
+    <!-- JavaScript function to show order placed alert -->
+    <script>
+        function showOrderPlacedAlert() {
+            alert("ORDER PLACED");
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="navbar-title">Cybergenics Pre-workout</div>
+        <div class="navbar-options">
+            <a href="finalProject.html">Home</a>
+            <a href="company.html">Company</a>
+            <a href="product.html">Product</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+   
+    <!-- Page heading and subheading -->
+    <h1>Windmill Health Products</h1>
+    <h2>Delivery Information</h2>
+    
+    <!-- Form for placing an order -->
+    <form action="process_order.php" method="post" onsubmit="return showOrderPlacedAlert()">
+        
+        <!-- Form group for first name -->
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        
+        <!-- Form group for last name -->
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <!-- Dropdown for selecting container size -->
+        <label for="container-size">Size:</label>
+        <select id="container-size" name="size">
+            <option value="small">Small [20 gummies]</option>
+            <option value="medium">Medium [40 gummies]</option>
+            <option value="large">Large [60 gummies]</option>
+        </select>
+       
+        <!-- Line breaks for spacing -->
+        <br>
+        <br>
+        
+        <!-- Dropdown for selecting quantity -->
+        <label for="quantity">Quantity:</label>
+        <select id="quantity" name="quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        
+        <!-- Line breaks for spacing -->
+        <br>
+        <br>
+        
+        <!-- Textarea for entering delivery address -->
+        <label for="delivery-address">Delivery Address:</label>
+        <textarea id="delivery-address" name="address" rows="2" maxlength="35" cols="25" placeholder="City, St. Apt. Ste."></textarea>
+        
+        <!-- Line breaks for spacing -->
+        <br>
+        <br>
+        
+        <!-- Submit button for placing the order -->
+        <input type="submit" value="Place Order">
+
+    </form>
+
+</body>
+<footer>
+    <!-- Copyright information -->
+    &copy; 2023 Yu Zhao & Dawson Fearon
+</footer>
+</html>
+

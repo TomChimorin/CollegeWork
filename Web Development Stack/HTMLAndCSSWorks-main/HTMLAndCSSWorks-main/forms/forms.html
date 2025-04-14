@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <form>
+        <p>Your Details:</p>
+        <label for="name">Name:</label><br>
+        <input type="text" id="Name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="Email" email="email"><br>
+
+        <p>Your Review:</p>
+
+        <label for="hear-about">How did you hear about us:</label>
+            <select id="hear-about" name="hear-about" class="spacer">
+                <option value="Google">Google</option>
+                <option value="Magazine">Magazine</option>
+                <option value="Friends">Friends</option>
+            </select>
+            <p style="margin-top: 10px;"></p>
+
+            <!-- Would you like to visit again? -->
+            <label for="visit-again">Would you like to visit again:</label>
+            <div class="radio-label">
+                <input type="radio" id="visit-yes" name="visit-again" value="Yes">
+                <label for="visit-yes">Yes</label>
+            </div>
+            <div class="radio-label">
+                <input type="radio" id="visit-no" name="visit-again" value="No">
+                <label for="visit-no">No</label>
+            </div>
+            <div class="radio-label">
+                <input type="radio" id="visit-maybe" name="visit-again" value="Maybe">
+                <label for="visit-maybe">Maybe</label>
+            </div>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+            <p style="margin-top: 10px;"></p>
+
+            <form>
+        
+ 
+  </select>
+        <input type="checkbox" id="signup" name="signup" value="email">
+        <label for="signup"> Sign me up for email address</label><br>
+        <input type="submit" value="Submit review">
+    </form>
+</body>
+</html>

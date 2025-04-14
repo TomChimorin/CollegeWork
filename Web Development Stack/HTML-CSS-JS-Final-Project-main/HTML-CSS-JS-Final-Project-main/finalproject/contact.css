@@ -1,0 +1,175 @@
+/* Resetting default margin and setting background styles */
+body {
+    margin: 0;
+    background-color: #424242;
+    background-image: url(https://www.stitchtools.com/assets/images/contact/contact-banner.jpg);
+    background-size: cover;
+}
+
+/* Styling for the navigation bar */
+nav {
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Styling for the title in the navigation bar */
+.navbar-title {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 auto; /* Center the title */
+    text-align: center;
+}
+
+/* Styling for the navigation options */
+.navbar-options {
+    display: flex;
+    justify-content: flex-start; /* Align options to the left */
+    width: 40%; /* Adjust the width as needed */
+}
+
+/* Styling for individual navigation links */
+.navbar-options a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    background-color: black;
+}
+
+/* Styling for navigation links on hover */
+.navbar-options a:hover {
+    color: rgb(128, 128, 128);
+}
+
+/* Styling for sections on the page */
+section {
+    padding: 20px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for a flex container */
+.flex-container {
+    display: flex;
+}
+
+/* Styling for a specific text block with an ID */
+#catchyText {
+    width: 50%;
+}
+
+/* Styling for an image with a specific ID */
+#productImage {
+    width: 50%;
+    max-height: 80vh;
+    object-fit: cover;
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px #ffffff;
+    text-shadow: 0px 2px 4px red;
+}
+
+/* Styling for the form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #2eceff;
+    border-radius: 5px;
+    background-color: #424242;
+}
+
+/* Style headings */
+h1 {
+    margin: 50px;
+    text-align: center;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+h2 {
+    margin: 25px;
+    text-align: center;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    -webkit-text-stroke: 0.5px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+/* Style labels */
+label {
+    /*display: block;*/
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Style input fields */
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #2eceff;
+    border-radius: 4px;
+}
+
+/* Styling for the main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Styling for submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Styling for submit button on hover */
+input[type="submit"]:hover {
+    background-color: #a2470a;
+}
+
+/* Styling for textarea (with some specific type attribute) */
+textarea[type="firstname"] {
+    width: 45%;
+    padding: 5px;
+    margin-top: 2.5px;
+    border: 1px solid #2eceff;
+    border-radius: 2px;
+}
