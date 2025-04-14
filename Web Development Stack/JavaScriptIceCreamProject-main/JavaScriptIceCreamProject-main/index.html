@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>JSON | COMP1073 Client-Side JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/normalize.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <img class="image" src="images/icecream.gif" alt="dancingIceCream">
+	<!-- STEP 1: Build out a HEADER and a SECTION element -->
+    <div class="animation-container">
+        <div class="diagonal-lines"></div>
+    </div>
+	 <header>
+
+	 </header>
+
+	 <section>
+        
+	 </section>
+
+     <audio id="background-music" loop>
+        <source src="lethal-company-soundtrack-icecream-song-made-with-Voicemod.mp3" type="audio/mp3">
+    </audio>
+
+	<script>
+         window.onload = function() {
+        var audio = document.getElementById('background-music');
+        audio.play().catch(function(error) {
+            // Handle the error, if any
+            console.log('Audio playback was prevented:', error);
+            });
+        };
+		/* STEP 2: Bind the HEADER and the SECTION elements above to variables */
+		const header = document.querySelector('header');
+		const section = document.querySelector('section');
+
+		/* STEP 3: Store the URL of a JSON file in a variable */
+		const requestURL = "https://YuZhao050528.github.io/JS-JSON/data/i-scream.json";
+
+		/* STEP 4: Create a new XHR object */
+		const request = new XMLHttpRequest();
+
+		/* STEP 5: Open a new request using the open() method */
+		request.open('GET', requestURL);
+
+		/* STEP 6: Set JavaScript to accept JSON from the server */
+		request.responseType = 'json';
+
+		/* STEP 7: Send the request with the send() method */
+		request.send();
+
+		/* STEP 8: Add an event handler that listens for the onload event of the JSON file/object */
+		request.addEventListener('load', () => {
+			console.log(request.response);
+            const iScreamInc = request.response;
+            populateHeader(iScreamInc);
+            showTopFlavors(iScreamInc);
+
+		});
+
+		/* STEP 9: Build out the populateHeader() function */
+        function populateHeader(jsonObj) {
+            const headerH1 = document.createElement('h1');
+            headerH1.textContent = jsonObj['companyName'];
+            header.appendChild(headerH1);
+            // Grab the company location and established data
+            const headerPara = document.createElement('p');
+            headerPara.textContent = 'Head Office ' + jsonObj['headOffice'] + ', Established: ' +
+            jsonObj['established'];
+            header.appendChild(headerPara);
+        }
+
+		/* STEP 10a: Assemble the showTopFlavors() function */
+        function showTopFlavors(jsonObj) {
+
+        
+
+			// STEP 10b: Bind the JSON topFlavors object to a var
+            const topFlavors = jsonObj['topFlavors'];
+			// STEP 10c: Loop through the topFlavors array
+            for (let i=0; i<topFlavors.length; i++) {
+
+            
+				// STEP 10d: build HTML elements for the content
+                const article = document.createElement('article');
+                const h2 = document.createElement('h2');
+                const img = document.createElement('img');
+                const p1 = document.createElement('p');
+                const p2 = document.createElement('p');
+                const list = document.createElement('ul');
+				// STEP 10e: Set the textContent property for each of the above elements (except the UL), based on the JSON content
+                img.setAttribute('src', 'https://YuZhao050528.github.io/JS-JSON/images/' + topFlavors[i].image);
+                img.setAttribute('alt', topFlavors[i].name);
+                h2.textContent = topFlavors[i].name;
+                p1.textContent = 'Calories: ' + topFlavors[i].calories;
+                p2.textContent = 'Type: ' + topFlavors[i].type;
+
+
+				// STEP 10f: Build a loop for the ingredients array in the JSON
+                const ingredients = topFlavors[i].ingredients;
+                for (let j=0; j<ingredients.length; j++) {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = ingredients[j];
+                    list.appendChild(listItem);
+                }
+
+				// STEP 10g: Append each of the above HTML elements to the ARTICLE element
+                article.appendChild(img);
+                article.appendChild(h2);
+                article.appendChild(p1);
+                article.appendChild(p2);
+                article.appendChild(list);
+
+				// STEP 10h: Append each complete ARTICLE element to the SECTION element
+                section.appendChild(article);
+
+            }
+            }
+
+		// This page inspired by and adapted from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
+
+		// A special thanks to https://openclipart.org/detail/285225/ice-cream-cones for the awesome ice cream cone illustrations
+		</script>
+	</body>
+</html>

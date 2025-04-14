@@ -1,0 +1,58 @@
+html {
+    background-color: tan; /* Set the background color of the page */
+}
+
+h1 {
+    text-align: center; /* Center the heading text */
+    font-size: 4rem; /* Set the font size for the heading */
+}
+
+#burgerSong {
+    display: none; /* Hide the audio element */
+}
+
+p:first-of-type {
+    font-size: 150%; /* Set the font size for the first paragraph */
+    text-align: center; /* Center the first paragraph text */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set the font family for the first paragraph */
+}
+
+img:first-of-type {
+    width: 20%; /* Set the width for the first image */
+    height: 20%; /* Set the height for the first image */
+    margin-left: 15%; /* Set the left margin for the first image */
+    margin-top: 5%; /* Set the top margin for the first image */
+}
+
+img:last-of-type {
+    width: 20%; /* Set the width for the last image */
+    height: 20%; /* Set the height for the last image */
+    margin-left: 26.2%; /* Set the left margin for the last image */
+    border-radius: 20px; /* Set the border radius for the last image */
+}
+
+#generateBurger {
+    position: absolute; /* Position the button absolutely */
+    top: 40rem; /* Set the top position for the button */
+    left: 70rem; /* Set the left position for the button */
+    font-size: 1.5rem; /* Set the font size for the button */
+    border-radius: 5px; /* Set the border radius for the button */
+    border: 2px solide black; /* Set the border for the button */
+    padding: 5px; /* Set the padding for the button */
+}
+
+#output:not(:empty) {
+    border-color: black; /* Show the border when there is content */
+    background-color: white; /* Set the background color when there is content */
+}
+
+#output {
+    position: absolute; /* Position the output absolutely */
+    font-size: 1.6rem; /* Set the font size for the output */
+    max-width: 30%; /* Set the maximum width for the output */
+    left: 61rem; /* Set the left position for the output */
+    top: 23rem; /* Set the top position for the output */
+    border: 2px solid transparent; /* Set the border for the output */
+    padding: 5px; /* Set the padding for the output */
+    border-radius: 5px; /* Set the border radius for the output */
+}

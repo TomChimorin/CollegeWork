@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* Assignment 1 | COMP1073 Client-Side JavaScript */
+
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #0A1622; /* Sets the background color of the page */
+    color: white; /* Sets the default text color */
+}
+
+body {
+    margin: auto; /* Centers the body content */
+    padding: 30px; /* Adds padding around the body content */
+}
+
+.big-ass-title {
+    text-align: center; /* Centers the title text */
+    font-family: sans-serif; /* Sets the font family for the title */
+    margin-bottom: 45px; /* Adds space below the title */
+    text-transform: uppercase; /* Converts the text to uppercase */
+}
+
+.content {
+    display: flex; /* Uses flexbox layout for the content */
+    justify-content: center; /* Centers the content horizontally */
+    width: 100%; /* Sets the width of the content to 100% */
+    column-gap: 15px; /* Adds space between columns */
+}
+
+.column {
+    width: 200px; /* Sets the width of each column */
+    background-color: #2b2d42; /* Sets the background color of columns */
+    border-radius: 5px; /* Rounds the corners of columns */
+    display: flex; /* Uses flexbox layout for columns */
+    flex-direction: column; /* Arranges items in columns vertically */
+    align-items: center; /* Centers items horizontally within columns */
+}
+
+.content button {
+    background: none; /* Removes default button background */
+    border: none; /* Removes default button border */
+    color: white; /* Sets the button text color to white */
+    font-size: 12px; /* Sets the button text size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    margin: 10px 0; /* Adds vertical margin to buttons */
+}
+
+.content button h1 {
+    margin: 10px; /* Adds margin around the button title */
+}
+
+.content button:hover {
+    color: #7c78ff; /* Changes text color on hover */
+}
+
+.list {
+    text-align: center; /* Centers the list text */
+    margin: 10px 0 40px 0; /* Adds margin around the list */
+    color: #b1cadf; /* Sets the list text color */
+    display: flex; /* Uses flexbox layout for list */
+    flex-direction: column; /* Arranges items in list vertically */
+    row-gap: 17px; /* Adds space between list items */
+}
+
+.list img {
+    width: 100%; /* Sets image width to 100% of container */
+    height: 100%; /* Sets image height to 100% of container */
+    object-fit: contain; /* Ensures images fit within their containers */
+}
+
+.list-item {
+    height: 90px; /* Sets the height of list items */
+    display: flex; /* Uses flexbox layout for list items */
+    flex-direction: column; /* Arranges items in list item vertically */
+    padding: 5px; /* Adds padding around list items */
+}
+
+.list-item p {
+    margin: 0; /* Removes default margin */
+    font-family: sans-serif; /* Sets the font family */
+    margin-top: 5px; /* Adds top margin to paragraph */
+}
+
+.list-item.active {
+    background-color: #393d5b; /* Sets background color for active item */
+    font-weight: bold; /* Makes text bold */
+    color: white; /* Sets text color to white */
+    border-radius: 5px; /* Rounds the corners of active item */
+}
+
+.random-reset {
+    display: flex; /* Uses flexbox layout */
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Centers the items vertically */
+    padding: 30px 0; /* Adds vertical padding */
+    column-gap: 20px; /* Adds space between buttons */
+}
+
+.random-reset button {
+    border: none; /* Removes default button border */
+    border-radius: 3px; /* Rounds the corners of buttons */
+    padding: 8px 25px; /* Adds padding inside buttons */
+    background-color: #2c2e48; /* Sets the background color of buttons */
+    color: white; /* Sets the button text color */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.random-reset button:hover {
+    background-color: #7c78ff; /* Changes background color on hover */
+}
