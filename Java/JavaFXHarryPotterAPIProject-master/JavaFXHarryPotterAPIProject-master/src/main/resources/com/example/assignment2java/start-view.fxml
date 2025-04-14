@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.ImageView?>
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2java.StartController" alignment="CENTER" spacing="20">
+    <Label fx:id="startTitle" text="Welcome to The Magic Book!" />
+    <Button text="Characters" fx:id="charactersButton" onAction="#handleCharactersButtonClick"/>
+    <Button text="Spells" fx:id="spellsButton" onAction="#handleSpellsButtonClick"/>
+</VBox>

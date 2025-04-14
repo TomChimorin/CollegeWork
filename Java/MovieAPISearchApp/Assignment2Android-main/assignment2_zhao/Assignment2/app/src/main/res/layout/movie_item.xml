@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@color/black"
+    android:id="@+id/contView">
+
+    <ImageView
+        android:id="@+id/detailsPosterImageView"
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10sp">
+
+        <!-- Movie Title -->
+        <TextView
+            android:id="@+id/detailsTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie Title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FF0000" />
+
+        <!-- Movie Year -->
+        <TextView
+            android:id="@+id/detailsYearTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <!-- Movie Rating -->
+        <TextView
+            android:id="@+id/detailsRatingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

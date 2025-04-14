@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="tv_app_title">Movie Search - OMDB API</string>
+</resources>

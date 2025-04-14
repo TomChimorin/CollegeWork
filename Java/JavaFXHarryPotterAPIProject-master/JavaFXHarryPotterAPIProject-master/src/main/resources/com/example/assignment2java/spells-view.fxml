@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: #002B5B" fx:controller="com.example.assignment2java.SpellsController" alignment="CENTER" spacing="20">
+    <HBox alignment="TOP_LEFT" spacing="10">
+        <Button fx:id="backButton" text="Back to Start" onAction="#handleBackButtonClick"/>
+    </HBox>
+    <Label fx:id="titleLabel2" text="Spells" />
+    <Label fx:id="spellNameLabel" text="Spell Name" />
+    <Label fx:id="spellDescriptionLabel" text="Spell Description" />
+    <TextArea fx:id="spellDetailsTextArea" wrapText="true" prefWidth="400" prefHeight="200"/>
+    <Button fx:id="previousButton" text="Previous" onAction="#onPreviousButtonClick"/>
+    <Button fx:id="nextButton" text="Next" onAction="#onNextButtonClick"/>
+</VBox>
