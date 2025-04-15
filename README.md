@@ -1,4 +1,4 @@
-#COLLEGE WORK:
+# COLLEGE WORK:
 What is college work? Well it's a long rabbit hole of 99.9999% of my projects from college. Sounds fun right? Although, I don't find them that important to be entitled to their own live links. Not that they're a piece of junk or anything.
 Just a showcase of my journey in coding through several programming languages.
 
